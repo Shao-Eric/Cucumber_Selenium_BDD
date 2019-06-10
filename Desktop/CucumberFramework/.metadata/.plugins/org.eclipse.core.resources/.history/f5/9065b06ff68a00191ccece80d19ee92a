@@ -1,0 +1,38 @@
+package CucumberFramework.steps;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login2Steps {
+	@Given("^User nagigates to stackoverflow website(\\d+)$")
+	public void user_nagigates_to_stackoverflow_website(int arg1) throws Throwable {
+		System.out.println("User nagigates to stackoverflow website2");
+	}
+
+	@Given("^User clicks on the login button on homepage(\\d+)$")
+	public void user_clicks_on_the_login_button_on_homepage(int arg1) throws Throwable {
+		System.out.println("ser clicks on the login button on homepage2");
+	}
+
+	@Given("^User enters a valid username(\\d+)$")
+	public void user_enters_a_valid_username(int arg1) throws Throwable {
+		System.out.println("User enters a valid username2");
+	}
+
+	@Given("^User enters a valid password(\\d+)$")
+	public void user_enters_a_valid_password(int arg1) throws Throwable {
+		System.out.println("User enters a valid password2");
+	}
+
+	@When("^user clicks on the login button(\\d+)$")
+	public void user_clicks_on_the_login_button(int arg1) throws Throwable {
+		System.out.println("user clicks on the login button2");
+	}
+
+	@Then("^User should be taken to the successful login page(\\d+)$")
+	public void user_should_be_taken_to_the_successful_login_page(int arg1) throws Throwable {
+		System.out.println("User should be taken to the successful login page2");
+	}
+}
